@@ -9,7 +9,7 @@ async function initMap() {
   const pindicator=document.querySelector('#pindicator1')
 
   const map = await L.map('map').setView([-34.922784, -56.165629], 16);
-  L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png').addTo(map);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
 
   // Points
   const responseData = await fetch('arb_mvd.geojson');
